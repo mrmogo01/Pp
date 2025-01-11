@@ -1,5 +1,6 @@
-import Button from "../components/Button"
-import Field from "../components/Field"
+import { Link } from 'react-router-dom';
+import Button from '../components/Button'; // Import Button component
+import Field from '../components/Field'; // Import Field component
 
 export default function LoginPage() {
     return (
@@ -20,7 +21,7 @@ export default function LoginPage() {
             <Field fieldClass="password-field" labelText="Пароль"></Field>
             <Button buttonClass="enter-btn" buttonText="ВОЙТИ"></Button>
             <p className="forget-password">Забыли пароль?</p>
-            <a className="enter-link" href="#a">Зарегистрировать Аккаунт</a>
+            <Link to="/registration" className="enter-link">Зарегистрировать Аккаунт</Link>
         </div>
     )
 }

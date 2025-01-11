@@ -1,5 +1,6 @@
-import Button from "../components/Button"
-import Field from "../components/Field"
+import { Link } from 'react-router-dom';
+import Button from "../components/Button";
+import Field from "../components/Field";
 
 export default function RegPage() {
     return (
@@ -8,7 +9,9 @@ export default function RegPage() {
             <Field labelText="Логин"></Field>
             <Field labelText="Электронная почта"></Field>
             <Field labelText="Пароль"></Field>
-            <Button buttonClass="reg-btn" buttonText="ЗАРЕГИСТРИРОВАТЬСЯ"></Button>
+            <Link to="/catalog-tests">
+                <Button buttonClass="reg-btn" buttonText="ЗАРЕГИСТРИРОВАТЬСЯ"></Button>
+            </Link>
             <div className="add-line-container">
                 <div className="add-line"></div>
                 <span>Или войдите через социальные сети</span>
